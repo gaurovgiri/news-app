@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:news_app/feature/news/data/news_article.dart';
-import 'package:url_launcher/url_launcher.dart';
+// import 'package:url_launcher/url_launcher.dart';
 
 class NewsDetailPage extends StatelessWidget {
   final Articles article;
@@ -62,7 +62,7 @@ class NewsDetailPage extends StatelessWidget {
 
               TextButton(
                   onPressed: () {
-                    _launchUrl(article.url);
+                    // _launchUrl(article.url);
                   },
                   child: Text(article.url ?? '')),
 
@@ -116,8 +116,8 @@ class NewsDetailPage extends StatelessWidget {
   }
 }
 
-Future<void> _launchUrl(url) async {
-  if (!await launchUrl(url)) {
-    throw Exception('Could not launch $url');
-  }
-}
+// Future<void> _launchUrl(url) async {
+//   if (!await launchUrl(url)) {
+//     throw Exception('Could not launch $url');
+//   }
+// }
