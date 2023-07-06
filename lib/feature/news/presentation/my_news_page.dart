@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:news_app/feature/news/data/news_article.dart';
@@ -9,6 +10,8 @@ class MyNewsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final player = AudioPlayer();
+    player.play(AssetSource("audio/mario.mp3"));
     return Scaffold(
         appBar: AppBar(title: const Text("My News Page")),
         body: RefreshIndicator(
@@ -31,6 +34,7 @@ class MyNewsPage extends StatelessWidget {
                       return InkWell(
                         // For click use InkWell or GestureDetector
                         onTap: () {
+                          player.play(AssetSource("audio/sound.wav"));
                           Navigator.push(
                               context,
                               MaterialPageRoute(
