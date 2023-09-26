@@ -39,6 +39,8 @@ dependencies:
   flutter_html: ^3.0.0-alpha.6
   audioplayers: ^1.0.1
   url_launcher: ^6.1.11
+  flutter_launcher_icons: ^0.13.1
+  cached_network_image: ^3.3.0
 
 dev_dependencies:
   flutter_test:
