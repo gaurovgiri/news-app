@@ -1,3 +1,5 @@
-# news_app
+# News App 
 
-News App is a flutter based application for displaying news
+
+News App is an application that fetches News from the [NewsAPI](https://newsapi.org) and renders the news in a thumbnail view and also in full read mode.
+
